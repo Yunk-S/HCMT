@@ -44,12 +44,12 @@ The time head is conditioned on the event family, because different clinical eve
 The training objective is:
 
 $$
-\mathcal{L} = \mathcal{L}_{\mathrm{event}}
- + \lambda_f\mathcal{L}_{\mathrm{family}}
- + \lambda_t\mathcal{L}_{\mathrm{time}}
- + \lambda_{traj}\mathcal{L}_{\mathrm{trajectory}}
- + \lambda_m\mathcal{L}_{\mathrm{masked\text{-}event}}
- + \lambda_v\mathcal{L}_{\mathrm{masked\text{-}value}}.
+\mathcal{L} = \mathcal{L}_{event}
+ + \lambda_f \mathcal{L}_{family}
+ + \lambda_t \mathcal{L}_{time}
+ + \lambda_{traj} \mathcal{L}_{trajectory}
+ + \lambda_m \mathcal{L}_{masked-event}
+ + \lambda_v \mathcal{L}_{masked-value}.
 $$
 
 The masked-value task reconstructs observed continuous measurements such as MAP, hemoglobin, lactate, and SpO2 when values are available. It does not convert unchanged normal measurements into event labels.
