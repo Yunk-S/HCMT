@@ -1,0 +1,40 @@
+"""
+HCMT Requirements
+================
+
+Core dependencies for the HCMT clinical trajectory prediction model.
+"""
+
+# Core
+torch>=2.0.0
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# Data processing
+scikit-learn>=1.0.0
+
+# Visualization (optional)
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Logging
+tensorboard>=2.10.0
+wandb>=0.13.0  # Optional
+
+# Utilities
+tqdm>=4.62.0
+pyyaml>=6.0
+
+# For INSPIRE data (PhysioNet)
+# Install via: pip install wfdb (for PhysioNet waveform data)
+# wget/curl for downloading data
+
+# Development
+pytest>=7.0.0
+black>=22.0.0
+isort>=5.10.0
+flake8>=4.0.0
+
+# For HDF5 files (optional)
+tables>=3.7.0
